@@ -1,82 +1,98 @@
+# Fix My Code Challenge
 
-Here is the README.md translated into English for your Fix My Code Challenge project:
+## Description
 
-Fix My Code Challenge
-Welcome to the Fix My Code Challenge project. This project involves debugging and fixing errors in existing programs written in Python, JavaScript, Ruby, and C. Each task includes a program with incorrect behavior that needs to be analyzed and fixed.
+**Fix My Code Challenge** est un projet où vous devez analyser et corriger des codes existants. Le but est de comprendre des bases de code dysfonctionnelles et d'y apporter des correctifs sans tout réécrire. Ce projet vous aidera à développer vos compétences en débogage et à améliorer votre compréhension des langages de programmation.
 
-Project Structure
-This project is organized as follows:
+---
 
-css
-Copier le code
-holbertonschool-Fix_My_Code_Challenge/
-│
-├── challenge/
-│   ├── 0-fizzbuzz.py
-│   ├── 1-print_square.js
-│   ├── 2-sort.rb
-│   ├── 3-user.py
-│   └── 4-delete_dnodeint/
-│       ├── main.c
-│       ├── free_dlistint.c
-│       ├── print_dlistint.c
-│       ├── add_dnodeint_end.c
-│       └── delete_dnodeint_at_index.c
-│
-└── README.md
-Tasks and Solutions
-Task 0: FizzBuzz (Python)
-File: 0-fizzbuzz.py
-Problem: The program does not replace multiples of 15 with "FizzBuzz" correctly.
-Solution: Add a condition to check if the number is divisible by 15 before checking the other cases (3 and 5).
-Command to test:
+## Table des matières
+
+- [Description](#description)
+- [Prérequis](#prérequis)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Tâches](#tâches)
+  - [FizzBuzz](#fizzbuzz)
+  - [Print Square](#print-square)
+  - [Sort](#sort)
+  - [User Password](#user-password)
+  - [Double Linked List](#double-linked-list)
+- [Contributeurs](#contributeurs)
+- [Licence](#licence)
+
+---
+
+## Prérequis
+
+- **Systèmes d'exploitation** : Ubuntu 20.04 LTS ou supérieur.
+- **Éditeurs de texte** : `vim`, `emacs`, ou `vi`.
+- Langages utilisés :
+  - Python
+  - JavaScript
+  - Ruby
+  - C
+
+---
+
+## Installation
+
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/holbertonschool-Fix_My_Code_Challenge.git
+   cd Fix_My_Code_Challenge
+Assurez-vous d'avoir les outils nécessaires pour chaque langage :
+Python (version 3.8 ou supérieure)
+Node.js (pour JavaScript)
+Ruby
+Un compilateur C (comme gcc)
+Usage
+Naviguez vers les fichiers de la tâche que vous souhaitez corriger. Chaque fichier contient un code à déboguer et à améliorer.
+
+Pour exécuter le code Python :
+
 bash
 Copier le code
-python3 0-fizzbuzz.py 50
-Task 1: Print Square (JavaScript)
-File: 1-print_square.js
-Problem: The program does not generate a square of the correct size.
-Solution: Fix the loop logic to generate a grid of # characters with the given dimension (size).
-Command to test:
+python3 fichier.py
+Pour exécuter le code JavaScript :
+
 bash
 Copier le code
-node 1-print_square.js 4
-Task 2: Sort (Ruby)
-File: 2-sort.rb
-Problem: The program does not sort the arguments correctly, mixing numbers and strings improperly.
-Solution: Use a sorting method that handles both numbers and strings appropriately.
-Command to test:
+node fichier.js
+Pour exécuter le code Ruby :
+
 bash
 Copier le code
-ruby 2-sort.rb 12 41 2 C 9 -9 31 fun -1 32
-Task 3: User Password (Python)
-File: 3-user.py
-Problem: The is_valid_password method does not correctly validate passwords.
-Solution: Fix the method to properly compare the user’s password with the stored password.
-Command to test:
+ruby fichier.rb
+Pour compiler et exécuter le code C :
+
 bash
 Copier le code
-python3 3-user.py
-Task 4: Double Linked List (C)
-Folder: 4-delete_dnodeint
-Problem: Operations on the doubly linked list (add, delete, print) do not work correctly.
-Solution:
-Fix the delete_dnodeint_at_index function to handle indexes properly.
-Revise add_dnodeint_end, free_dlistint, and print_dlistint functions.
-Command to compile and test:
-bash
-Copier le code
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 main.c free_dlistint.c print_dlistint.c add_dnodeint_end.c delete_dnodeint_at_index.c -o delete_dnodeint
-./delete_dnodeint
-How to Contribute
-Clone the repository:
-bash
-Copier le code
-git clone <your-repository-link>
-Test the files and identify issues.
-Submit your fixes.
-Authors
-Salomon
-Holberton School
-License
-This project is licensed under the MIT License. You are free to use, modify, and distribute it.
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 fichier.c -o executable
+./executable
+Tâches
+FizzBuzz
+Fichier : 0-fizzbuzz.py
+Problème : Le nombre 15 ne retourne pas FizzBuzz, mais Fizz.
+Correction : Ajouter une condition pour vérifier si un nombre est divisible par 3 et 5 avant les autres conditions.
+Print Square
+Fichier : 1-print_square.js
+Problème : La taille du carré n'est pas respectée.
+Correction : S'assurer que le script génère correctement une grille de taille n x n.
+Sort
+Fichier : 2-sort.rb
+Problème : Les arguments ne sont pas triés correctement.
+Correction : Convertir les arguments en entiers avant de les trier.
+User Password
+Fichier : 3-user.py
+Problème : La méthode is_valid_password ne valide pas correctement les mots de passe.
+Correction : Comparer le mot de passe fourni avec le mot de passe stocké de manière appropriée.
+Double Linked List
+Fichier : 4-delete_dnodeint/
+Problème : Le programme ne met pas à jour correctement les pointeurs après une suppression dans une liste doublement chaînée.
+Correction : Mettre à jour les pointeurs prev et next lors de la suppression d'un nœud.
+Contributeurs
+Diallo Salomon
+Licence
+Ce projet est sous licence MIT. Consultez le fichier LICENSE pour plus d'informations.
+
